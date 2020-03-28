@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UpdateProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/demo_profile"
+            android:elevation="1dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user_profile"
+            android:drawableLeft="@drawable/user_profile"
+            android:drawablePadding="5dp"
+            android:hint="Name"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user_address"
+            android:drawableLeft="@drawable/user_address"
+            android:drawablePadding="5dp"
+            android:hint="Address"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/user_address"
+            android:drawableLeft="@drawable/user_address"
+            android:drawablePadding="5dp"
+            android:hint="PinCode"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Submit"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/shape_button"/>
+
+</LinearLayout>
+</LinearLayout>
